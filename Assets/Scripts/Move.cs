@@ -15,17 +15,20 @@ public class Move : MonoBehaviour
     private float spawnInterval = 0.5f;
     public GameObject ammoPrefabs;
     public Transform shotDir;
+    public GameObject[] check;
     // Start is called before the first frame update
-    void Start()
+        void Start()
     {
+        
         playerRb = GetComponent<Rigidbody>();
         InvokeRepeating("shoots",StartDelay,spawnInterval);
 
     }
 
     // Update is called once per frame
-    void Update()
+        void Update()
     {
+        
 
         verticalInput = joystick.Vertical;
         horizontalInput = joystick.Horizontal;
@@ -51,11 +54,13 @@ public class Move : MonoBehaviour
     
         void shoots()
     {
+        check = GameObject.FindGameObjectsWithTag("Enemy");
+        
         //סענוכüבא
-        if (verticalInput == 0 && horizontalInput == 0)
+        if (verticalInput == 0 && horizontalInput == 0 && check.Length != 0)
         {
             Instantiate(ammoPrefabs, shotDir.transform.position, transform.rotation);
         }
     }
-
+   
 }

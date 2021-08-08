@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DestroyAmmo : MonoBehaviour
 {
-    private float topBound = 800;
+    private float topBound = 700;
     // Start is called before the first frame update
     void Start()
     {

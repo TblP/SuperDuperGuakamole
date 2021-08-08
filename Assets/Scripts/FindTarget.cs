@@ -15,6 +15,9 @@ public class FindTarget : MonoBehaviour
     public float distance = 1000;
     public float distance2;
     public int tragerPos;
+    public float horizontalInput;
+    public float verticalInput;
+    public Joystick joystick;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +27,9 @@ public class FindTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       distance = 1000;
+        verticalInput = joystick.Vertical;
+        horizontalInput = joystick.Horizontal;
+        distance = 1000;
        //поиск ближайшего противника из списка
        for ( int i = 0; i < _currentTriggers.Count; i++)
         {
@@ -38,9 +43,13 @@ public class FindTarget : MonoBehaviour
                 
         }
         //наводка на боижайшего противника
+   
         target = _currentTriggers[tragerPos].gameObject.transform;
+       if(verticalInput == 0 && horizontalInput == 0)
+        {
+            transform.LookAt(target);
+        }
        
-       transform.LookAt(target);
         
     }
     private void FixedUpdate()
