@@ -7,9 +7,6 @@ public class health : MonoBehaviour
 {
     public Image bar;
     public float fill;
-    private float StartDelay = 2;
-    private float spawnInterval = 1.0f;
-    private bool check = false;
     // Start is called before the first frame update
     void Start()
     {
