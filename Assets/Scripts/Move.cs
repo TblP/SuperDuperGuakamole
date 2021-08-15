@@ -39,12 +39,12 @@ public class Move : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(playerRb.velocity);
         }
-
+        //границы экрана
         if (transform.position.x > rightBound)
         {
             transform.position = new Vector3(rightBound, transform.position.y, transform.position.z);
         }
-        //границы экрана
+        
         if (transform.position.x < leftBound)
         {
             transform.position = new Vector3(leftBound, transform.position.y, transform.position.z);
