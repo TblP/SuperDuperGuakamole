@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 56090717868345072}
   - component: {fileID: 64120233058551644}
   - component: {fileID: 83168193813234434}
-  - component: {fileID: 50238199774701136}
   - component: {fileID: 50238199774701130}
+  - component: {fileID: 1654774853869536736}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Enemy
@@ -108,19 +108,6 @@ MonoBehaviour:
   endScale: {x: 10, y: 10, z: 10}
   scaleSpeed: 0
   scaleRate: 0.5
---- !u!65 &50238199774701136
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50092519149403424}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9999998, y: 2.0000002, z: 2.4652214}
-  m_Center: {x: 0, y: 0.00000023841864, z: -0.31269112}
 --- !u!114 &50238199774701130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +121,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!65 &1654774853869536736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50092519149403424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999998, y: 2.0000002, z: 2.4652214}
+  m_Center: {x: 0, y: 0.00000023841864, z: -0.31269112}

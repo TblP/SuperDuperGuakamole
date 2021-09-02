@@ -58,22 +58,29 @@
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
+    <Compile Include="Assets\Scripts\DamagePanel.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\EnemyAtack.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
+    <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\DestroyPanel.cs" />
     <Compile Include="Assets\Scripts\health.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
+    <Compile Include="Assets\Scripts\MoveEnemy.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBar.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Scripts\FindTarget.cs" />
     <Compile Include="Assets\Scripts\DestroyAmmo.cs" />
     <Compile Include="Assets\ProgressBar\Script\ProgressBarCircle.cs" />
     <Compile Include="Assets\ProgressBar\Scene\Demo.cs" />
-    <Compile Include="Assets\Scripts\EnemyAtack.cs" />
-    <Compile Include="Assets\Scripts\MoveEnemy.cs" />
-    <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\DistanceShoot.cs" />
     <Compile Include="Assets\Scripts\posHelth.cs" />
+    <Compile Include="Assets\Scripts\Gate.cs" />
+    <Compile Include="Assets\Scripts\Finish.cs" />
+    <Compile Include="Assets\Scripts\AcherShoots.cs" />
+    <Compile Include="Assets\Scripts\DestroyEnemyAmmo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />

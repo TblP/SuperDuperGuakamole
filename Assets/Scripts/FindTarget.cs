@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class FindTarget : MonoBehaviour
 {
-    public GameObject[] enemys;
-    public GameObject enemy;
+    
     public Transform target;
     public List<Collider> _currentTriggers { get; } = new List<Collider>();
     private Dictionary<Collider, bool> _triggerStates = new Dictionary<Collider, bool>();

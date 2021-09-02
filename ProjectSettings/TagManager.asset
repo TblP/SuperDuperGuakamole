@@ -9,6 +9,9 @@ TagManager:
   - Bwell
   - Enemy
   - Ammo
+  - FloorEnemy
+  - Gate
+  - EnemyAmmo
   layers:
   - Default
   - TransparentFX
