@@ -303,10 +303,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.96
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 30
+  m_Acceleration: 15
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 50
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -1112,8 +1112,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 83.4
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
         type: 3}
@@ -1583,10 +1598,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.96
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 30
+  m_Acceleration: 15
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 50
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -1800,7 +1815,7 @@ MonoBehaviour:
   leftBound: 52
   horizontalInput: 0
   verticalInput: 0
-  speed: 50
+  speed: 35
   joystick: {fileID: 1433679344}
   ammoPrefabs: {fileID: 1245893288068283059, guid: d10c72040055a2347860194d16515401,
     type: 3}
@@ -2105,10 +2120,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.96
-  m_Speed: 10
-  m_Acceleration: 8
+  m_Speed: 30
+  m_Acceleration: 15
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 50
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -2216,6 +2231,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.6
       objectReference: {fileID: 0}
@@ -2287,6 +2317,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 53003734235501464, guid: 937ed08613953654a83dc8e6d8f5c736,
         type: 3}
@@ -2746,7 +2791,7 @@ PrefabInstance:
     - target: {fileID: 4518538573404690709, guid: 3082844691a883444bd7e788411f2617,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 107.8
+      value: 59.5
       objectReference: {fileID: 0}
     - target: {fileID: 4518538573404690709, guid: 3082844691a883444bd7e788411f2617,
         type: 3}

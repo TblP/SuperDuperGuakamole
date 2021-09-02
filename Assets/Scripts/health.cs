@@ -37,7 +37,7 @@ public class health : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-           fill -= 0.2f;
+           fill -= 0.1f;
         }
 
         if (collision.gameObject.CompareTag("FloorEnemy"))
@@ -48,7 +48,7 @@ public class health : MonoBehaviour
         {
 
             Debug.Log("123");
-            fill -= 0.3f;
+            fill -= 0.2f;
             Destroy(collision.gameObject);
 
         }
