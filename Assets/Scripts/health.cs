@@ -6,12 +6,13 @@ using UnityEngine.UI;
 
 public class health : MonoBehaviour
 {
-    private GameManager gameManager;
+    
     public GameObject plane;
     public Image bar;
     public Image backbar;
     public float fill;
     bool check = false;
+    public float lockPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,7 @@ public class health : MonoBehaviour
     void Update()
     {
         plane = GameObject.FindWithTag("FloorEnemy");
-        
+        transform.rotation = Quaternion.Euler(lockPos, transform.rotation.eulerAngles.y, lockPos);
         bar.fillAmount = fill;
         if ( fill <= 0)
         {
