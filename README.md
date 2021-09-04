@@ -1,2 +1,2 @@
 # SuperDuperGuakamole
-![Alt Text](https://giphy.com/embed/AesDf8sEPOJqCAcLFy)
+![Alt Text](https://media.giphy.com/media/AesDf8sEPOJqCAcLFy/giphy.gif)
