@@ -1,5 +1,5 @@
 # SuperDuperGuakamole
 <p align="center">
-  <img src="teset.gif" alt="animated" />
+  <img src="gif/teset.gif" alt="animated" />
 </p>
 
