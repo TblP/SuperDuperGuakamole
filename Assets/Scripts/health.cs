@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class health : MonoBehaviour
 {
+    private GameManager gameManager;
     public GameObject plane;
     public Image bar;
+    public Image backbar;
     public float fill;
     bool check = false;
     // Start is called before the first frame update
     void Start()
     {
+        
         fill = 1f;
     }
 
@@ -21,14 +25,19 @@ public class health : MonoBehaviour
         plane = GameObject.FindWithTag("FloorEnemy");
         
         bar.fillAmount = fill;
-        if ( fill < 0)
+        if ( fill <= 0)
         {
-            Debug.Log("GameOver");
+            
+            Destroy(gameObject);
+            Destroy(backbar);
+            Destroy(bar);
+
         }
 
         if (check == true && plane != null)
         {
             fill -= 0.001f;
+
         }
     }
 
@@ -37,20 +46,16 @@ public class health : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Enemy"))
         {
-           fill -= 0.1f;
+            fill -= 0.1f;
         }
-
         if (collision.gameObject.CompareTag("FloorEnemy"))
         {
            check = true;
         }
         if (collision.gameObject.CompareTag("EnemyAmmo"))
         {
-
-            Debug.Log("123");
             fill -= 0.2f;
             Destroy(collision.gameObject);
-
         }
 
     }
@@ -61,5 +66,14 @@ public class health : MonoBehaviour
         {
            check = false;
         }
+
     }
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            fill -= 0.002f;
+        }
+    }
+
 }

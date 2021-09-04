@@ -22,7 +22,7 @@ public class DestroyEnemyAmmo : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("FWell"))
+        if (collision.gameObject.CompareTag("FWell") || collision.gameObject.CompareTag("Bounds"))
         {
 
             Destroy(gameObject);

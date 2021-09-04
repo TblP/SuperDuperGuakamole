@@ -12,6 +12,7 @@ TagManager:
   - FloorEnemy
   - Gate
   - EnemyAmmo
+  - Bounds
   layers:
   - Default
   - TransparentFX

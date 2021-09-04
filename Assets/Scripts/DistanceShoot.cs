@@ -7,10 +7,11 @@ public class DistanceShoot : MonoBehaviour
     private float StartDelay = 2f;
     private float spawnInterval = 6f;
     public GameObject ammoPrefabs;
-    public Transform Player;
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
+        Player = GameObject.FindGameObjectWithTag("Player");
         InvokeRepeating("spawn", StartDelay, spawnInterval);
     }
 

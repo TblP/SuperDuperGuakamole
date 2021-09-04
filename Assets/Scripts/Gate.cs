@@ -14,10 +14,15 @@ public class Gate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        if (Time.timeScale == 1)
         {
-            gameObject.SetActive(false);
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+            {
+                gameObject.SetActive(false);
+            }
         }
+        
+        
     }
     
 }
